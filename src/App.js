@@ -1,11 +1,16 @@
 import "./App.css";
 import Home from "./pages/Home";
+import { ProductProvider } from "./ProductContext";
 
 function App() {
   return (
-    <div className="App"> 
-        <Home />
-    </div>
+    <>
+      <ProductProvider>
+        <div className="App">
+          <Home />
+        </div>
+      </ProductProvider>
+    </>
   );
 }
 
