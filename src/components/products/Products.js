@@ -1,15 +1,13 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Product from "../product/Product";
-import { useContext, useState } from "react";
 import ProductContext from "../../ProductContext";
 import "./products.css";
-import { useEffect } from "react";
 
 export default function Products({ sortOption }) {
   const { filteredProducts } = useContext(ProductContext);
-  const [visibleProducts, setVisibleProducts] = useState(
-    filteredProducts.slice(0, 4 * 5)
-  );
+  const [visibleProducts, setVisibleProducts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 4 * 5; // 4 products per row, 5 rows
 
   // Handle sorting whenever the sortOption or filteredProducts change
   useEffect(() => {
@@ -32,12 +30,21 @@ export default function Products({ sortOption }) {
         // No sorting or invalid option, keep the same order
         break;
     }
-    setVisibleProducts(sortedProducts.slice(0, 4 * 5));
+
+    setVisibleProducts(sortedProducts.slice(0, productsPerPage));
+    setCurrentPage(1);
   }, [sortOption, filteredProducts]);
 
   const handleLoadMore = () => {
-    const currentRows = Math.ceil(visibleProducts.length / 4);
-    setVisibleProducts(filteredProducts.slice(0, 4 * (currentRows + 1)));
+    const nextPage = currentPage + 1;
+    const startIndex = (nextPage - 1) * productsPerPage;
+    const endIndex = nextPage * productsPerPage;
+
+    setVisibleProducts((prevProducts) => [
+      ...prevProducts,
+      ...filteredProducts.slice(startIndex, endIndex),
+    ]);
+    setCurrentPage(nextPage);
   };
 
   return (
