@@ -15,7 +15,9 @@ export default function Home() {
       }
 
       <div className="body">
-        <Filter />
+        <div className="filter">
+          <Filter />
+        </div>
         <div className="products">
           <div className="products_header">
             <h2 className="products_title">category name & description</h2>

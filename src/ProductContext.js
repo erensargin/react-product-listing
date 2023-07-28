@@ -22,6 +22,24 @@ export function ProductProvider({ children }) {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       category: "category 2",
     },
+    {
+      id: 3,
+      name: "Product 3",
+      price: 300,
+      image: "https://picsum.photos/200/300",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      category: "category 3",
+    },
+    {
+      id: 4,
+      name: "Product 4",
+      price: 400,
+      image: "https://picsum.photos/200/300",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      category: "category 4",
+    },
   ]);
   const [filter, setFilter] = useState("");
 
