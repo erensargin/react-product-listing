@@ -1,0 +1,40 @@
+/* sort.css */
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  select::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #f7f7f7;
+  }
+  
+  select::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  select::-webkit-scrollbar-thumb:hover {
+    background-color: #b3b3b3;
+  }
+  
