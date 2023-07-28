@@ -12,6 +12,7 @@ export function ProductProvider({ children }) {
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       category: "category 1",
+      color: "red",
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ export function ProductProvider({ children }) {
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       category: "category 2",
+      color: "blue",
     },
     {
       id: 3,
@@ -30,6 +32,7 @@ export function ProductProvider({ children }) {
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       category: "category 3",
+      color: "green",
     },
     {
       id: 4,
@@ -39,13 +42,23 @@ export function ProductProvider({ children }) {
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       category: "category 4",
+      color: "yellow",
     },
   ]);
   const [filter, setFilter] = useState("");
 
+  const [filteredProducts, setFilteredProducts] = useState(products);
+
   return (
     <ProductContext.Provider
-      value={{ products, setProducts, filter, setFilter }}
+      value={{
+        products,
+        setProducts,
+        filter,
+        setFilter,
+        filteredProducts,
+        setFilteredProducts,
+      }}
     >
       {children}
     </ProductContext.Provider>

@@ -1,0 +1,33 @@
+/* filter.css */
+
+.filter {
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .color-filter {
+    margin-bottom: 20px;
+  }
+  
+  .color-filter h3 {
+    margin-bottom: 10px;
+  }
+  
+  .color-filter label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .price-filter {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .price-filter h3 {
+    margin-bottom: 10px;
+  }
+  
+  .price-filter label {
+    margin-bottom: 5px;
+  }
+  
