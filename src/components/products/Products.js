@@ -1,48 +1,44 @@
-import React, { useContext, useState, useEffect, useRef } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Product from "../product/Product";
 import ProductContext from "../../ProductContext";
 import "./products.css";
 
-export default function Products({ sortOption }) {
-  const { filteredProducts } = useContext(ProductContext);
+export default function Products() {
+  const { sortOption, filteredProducts } = useContext(ProductContext);
+  const [sortedProducts, setSortedProducts] = useState([]);
   const [visibleProducts, setVisibleProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    let sortedProducts = [...filteredProducts];
+    const sortProducts = () => {
+      const sorted = [...filteredProducts].sort((a, b) => {
+        switch (sortOption) {
+          case "alpha-asc":
+            return a.name.localeCompare(b.name);
+          case "alpha-desc":
+            return b.name.localeCompare(a.name);
+          case "price-asc":
+            return a.price - b.price;
+          case "price-desc":
+            return b.price - a.price;
+          default:
+            return 0;
+        }
+      });
+      setSortedProducts(sorted);
+    };
 
-    switch (sortOption) {
-      case "alpha-asc":
-        sortedProducts.sort((a, b) => a.name.localeCompare(b.name));
-        break;
-      case "alpha-desc":
-        sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
-        break;
-      case "price-asc":
-        sortedProducts.sort((a, b) => a.price - b.price);
-        break;
-      case "price-desc":
-        sortedProducts.sort((a, b) => b.price - a.price);
-        break;
-      default:
-        // No sorting or invalid option, keep the same order
-        break;
-    }
+    sortProducts();
+  }, [filteredProducts, sortOption]);
 
-    setVisibleProducts(sortedProducts.slice(0, 4));
-    setCurrentPage(1);
-  }, [sortOption, filteredProducts]);
+  useEffect(() => {
+    const productsPerPage = 4;
+    const endIndex = currentPage * productsPerPage;
+    setVisibleProducts(sortedProducts.slice(0, endIndex));
+  }, [currentPage, sortedProducts]);
 
   const handleLoadMore = () => {
-    const nextPage = currentPage + 1;
-    const startIndex = (nextPage - 1) * 4;
-    const endIndex = nextPage * 4;
-
-    setVisibleProducts((prevProducts) => [
-      ...prevProducts,
-      ...filteredProducts.slice(startIndex, endIndex),
-    ]);
-    setCurrentPage(nextPage);
+    setCurrentPage((prevPage) => prevPage + 1);
   };
 
   return (
@@ -52,7 +48,7 @@ export default function Products({ sortOption }) {
           <Product key={index} product={product} />
         ))}
       </div>
-      {visibleProducts.length < filteredProducts.length && (
+      {visibleProducts.length < sortedProducts.length && (
         <button onClick={handleLoadMore}>Load More</button>
       )}
     </div>

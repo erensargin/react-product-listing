@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import ProductContext from "../../ProductContext";
-import "./filter.css"; // Create a separate CSS file for filter styles
+import "./filter.css";
 
 export default function Filter() {
   const { products, setFilteredProducts } = useContext(ProductContext);

@@ -1,10 +1,14 @@
 import React from "react";
-import "./sort.css"; // Import the CSS file for sort styles
+import "./sort.css";
+import ProductContext from "../../ProductContext";
+import { useContext } from "react";
 
-export default function Sort({ onSortChange }) {
+export default function Sort() {
+  const { setSortOption } = useContext(ProductContext);
+
   const handleSortChange = (event) => {
     const selectedSortOption = event.target.value;
-    onSortChange(selectedSortOption);
+    setSortOption(selectedSortOption);
   };
 
   return (
