@@ -1,6 +1,6 @@
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    height: max-content;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}

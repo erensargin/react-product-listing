@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect, useRef } from "react";
 import Product from "../product/Product";
 import ProductContext from "../../ProductContext";
 import "./products.css";
@@ -7,9 +7,7 @@ export default function Products({ sortOption }) {
   const { filteredProducts } = useContext(ProductContext);
   const [visibleProducts, setVisibleProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 4 * 5; // 4 products per row, 5 rows
 
-  // Handle sorting whenever the sortOption or filteredProducts change
   useEffect(() => {
     let sortedProducts = [...filteredProducts];
 
@@ -31,14 +29,14 @@ export default function Products({ sortOption }) {
         break;
     }
 
-    setVisibleProducts(sortedProducts.slice(0, productsPerPage));
+    setVisibleProducts(sortedProducts.slice(0, 4));
     setCurrentPage(1);
   }, [sortOption, filteredProducts]);
 
   const handleLoadMore = () => {
     const nextPage = currentPage + 1;
-    const startIndex = (nextPage - 1) * productsPerPage;
-    const endIndex = nextPage * productsPerPage;
+    const startIndex = (nextPage - 1) * 4;
+    const endIndex = nextPage * 4;
 
     setVisibleProducts((prevProducts) => [
       ...prevProducts,
@@ -48,10 +46,12 @@ export default function Products({ sortOption }) {
   };
 
   return (
-    <div className="product-grid">
-      {visibleProducts.map((product, index) => (
-        <Product key={index} product={product} />
-      ))}
+    <div className="products">
+      <div className="product-grid">
+        {visibleProducts.map((product, index) => (
+          <Product key={index} product={product} />
+        ))}
+      </div>
       {visibleProducts.length < filteredProducts.length && (
         <button onClick={handleLoadMore}>Load More</button>
       )}
