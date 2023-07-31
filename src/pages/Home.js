@@ -5,8 +5,12 @@ import Products from "../components/products/Products";
 import "./home.css";
 import Filter from "../components/filter/Filter";
 import Sort from "../components/sort/Sort";
+import { useContext } from "react";
+import ProductContext from "../ProductContext";
 
 export default function Home() {
+  const { category } = useContext(ProductContext);
+
   return (
     <div className="home">
       {
@@ -20,7 +24,9 @@ export default function Home() {
         </div>
         <div className="products">
           <div className="products_header">
-            <h2 className="products_title">category name & description</h2>
+            <h2 className="products_title">
+              {category.name} & description: {category.description}
+            </h2>
             <Sort />
           </div>
           <Products />

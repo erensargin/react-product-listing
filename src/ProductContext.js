@@ -1,15 +1,21 @@
 import { createContext, useState } from "react";
-import data from "./data/data";
+import watch_data from "./data/data";
 
 const ProductContext = createContext();
 
 export function ProductProvider({ children }) {
-  const [products, setProducts] = useState(data);
+  const [products, setProducts] = useState(watch_data);
 
+  // filter
   const [filteredProducts, setFilteredProducts] = useState(products);
-
   // sort
   const [sortOption, setSortOption] = useState("alpha-asc");
+
+  // category
+  const [category, setCategory] = useState({
+    name: "Bags",
+    description: "Bags & Accessories",
+  });
 
   return (
     <ProductContext.Provider
@@ -20,6 +26,8 @@ export function ProductProvider({ children }) {
         setFilteredProducts,
         sortOption,
         setSortOption,
+        category,
+        setCategory,
       }}
     >
       {children}
