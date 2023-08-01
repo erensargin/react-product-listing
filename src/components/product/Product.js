@@ -48,7 +48,7 @@ export default function Product({ product }) {
 
       <Snackbar
         open={open}
-        autoHideDuration={3000}
+        autoHideDuration={2000}
         onClose={handleClose}
         message="Item added to cart"
         action={action}

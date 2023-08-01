@@ -1,11 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import ProductContext from "../../ProductContext";
 import "./filter.css";
+import Slider from "@mui/material/Slider";
 
 export default function Filter() {
-  const { products, setFilteredProducts } = useContext(ProductContext);
+  const { products, setFilteredProducts, priceRange, setPriceRange } =
+    useContext(ProductContext);
   const [selectedColors, setSelectedColors] = useState([]);
-  const [selectedPrice, setSelectedPrice] = useState("");
 
   const availableColors = [
     ...new Set(products.map((product) => product.color)),
@@ -20,9 +21,8 @@ export default function Filter() {
     );
   };
 
-  const handlePriceChange = (event) => {
-    const price = event.target.value;
-    setSelectedPrice(price);
+  const handlePriceChange = (event, newValue) => {
+    setPriceRange(newValue);
   };
 
   useEffect(() => {
@@ -31,13 +31,13 @@ export default function Filter() {
       const colorFilter =
         selectedColors.length === 0 || selectedColors.includes(product.color);
       const priceFilter =
-        selectedPrice === "" || product.price <= parseInt(selectedPrice);
+        product.price >= priceRange[0] && product.price <= priceRange[1];
       return colorFilter && priceFilter;
     });
 
     // Update the filtered products in the ProductContext
     setFilteredProducts(filteredProducts);
-  }, [selectedColors, selectedPrice, products, setFilteredProducts]);
+  }, [selectedColors, products, priceRange, setFilteredProducts]);
 
   return (
     <div className="filter">
@@ -57,43 +57,18 @@ export default function Filter() {
         ))}
       </div>
       <div className="price-filter">
-        <h3>Price:</h3>
-        <label>
-          <input
-            type="radio"
-            value=""
-            checked={selectedPrice === ""}
-            onChange={handlePriceChange}
-          />
-          All
-        </label>
-        <label>
-          <input
-            type="radio"
-            value="50"
-            checked={selectedPrice === "50"}
-            onChange={handlePriceChange}
-          />
-          $50 and below
-        </label>
-        <label>
-          <input
-            type="radio"
-            value="100"
-            checked={selectedPrice === "100"}
-            onChange={handlePriceChange}
-          />
-          $100 and below
-        </label>
-        <label>
-          <input
-            type="radio"
-            value="200"
-            checked={selectedPrice === "200"}
-            onChange={handlePriceChange}
-          />
-          $200 and below
-        </label>
+        <h3>Price Range</h3>
+        <h5 className="price-range-show">
+          ${priceRange[0]} - ${priceRange[1]}
+        </h5>
+        <Slider
+          getAriaLabel={() => "Temperature range"}
+          value={priceRange}
+          onChange={handlePriceChange}
+          valueLabelDisplay="off"
+          max={3000}
+          min={0}
+        />
       </div>
     </div>
   );

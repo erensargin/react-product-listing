@@ -5,7 +5,7 @@ import bag_data from "./data/bag_data";
 const ProductContext = createContext();
 
 export function ProductProvider({ children }) {
-  const [products, setProducts] = useState(watch_data);
+  const [products, setProducts] = useState(bag_data);
 
   // filter
   const [filteredProducts, setFilteredProducts] = useState(products);
@@ -14,12 +14,15 @@ export function ProductProvider({ children }) {
 
   // category
   const [category, setCategory] = useState({
-    name: "Watches",
-    description: "Watches & Accessories",
+    name: "Bags",
+    description: "Bags & Accessories",
   });
 
   // product count
   const [productsCountInCart, setProductsCountInCart] = useState(0);
+
+  // price range
+  const [priceRange, setPriceRange] = useState([0, 3000]);
 
   const handleCategoryChange = (selectedCategory) => {
     if (selectedCategory === "Bags") {
@@ -53,6 +56,8 @@ export function ProductProvider({ children }) {
         handleCategoryChange,
         productsCountInCart,
         setProductsCountInCart,
+        priceRange,
+        setPriceRange,
       }}
     >
       {children}
