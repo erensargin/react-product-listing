@@ -2,5 +2,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+}
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
 }
