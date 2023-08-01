@@ -43,7 +43,7 @@ export default function Filter() {
     <div className="filter">
       <h2>Filter</h2>
       <div className="color-filter">
-        <h3>Color:</h3>
+        <h3>Color</h3>
         {availableColors.map((color) => (
           <label key={color}>
             <input
