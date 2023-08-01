@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import Product from "../product/Product";
 import ProductContext from "../../ProductContext";
 import "./products.css";
+import Button from "@mui/material/Button";
 
 export default function Products() {
   const { sortOption, filteredProducts } = useContext(ProductContext);
@@ -43,14 +44,19 @@ export default function Products() {
 
   return (
     <div className="products">
+      {visibleProducts.length} out of {sortedProducts.length}
       <div className="product-grid">
         {visibleProducts.map((product, index) => (
           <Product key={index} product={product} />
         ))}
       </div>
-      {visibleProducts.length < sortedProducts.length && (
-        <button onClick={handleLoadMore}>Load More</button>
-      )}
+      <div className="load-more-container">
+        {visibleProducts.length < sortedProducts.length && (
+          <Button variant="contained" onClick={handleLoadMore}>
+            Load More
+          </Button>
+        )}
+      </div>
     </div>
   );
 }
