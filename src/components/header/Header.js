@@ -7,7 +7,8 @@ import mainLogo from "../../images/e-commerce-logo.png";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 export default function Header() {
-  const { handleCategoryChange } = useContext(ProductContext);
+  const { handleCategoryChange, productsCountInCart } =
+    useContext(ProductContext);
 
   return (
     <>
@@ -31,6 +32,7 @@ export default function Header() {
         </div>
         <div className="cart">
           <ShoppingCartIcon />
+          <h6>{productsCountInCart}</h6>
         </div>
       </div>
     </>

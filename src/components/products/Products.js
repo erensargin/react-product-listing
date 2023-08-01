@@ -44,7 +44,11 @@ export default function Products() {
 
   return (
     <div className="products">
-      {visibleProducts.length} out of {sortedProducts.length}
+      <div className="visible">
+        <h6>
+          {visibleProducts.length} out of {sortedProducts.length}
+        </h6>
+      </div>
       <div className="product-grid">
         {visibleProducts.map((product, index) => (
           <Product key={index} product={product} />

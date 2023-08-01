@@ -25,7 +25,7 @@ export default function Home() {
         <div className="products">
           <div className="products_header">
             <h2 className="products_title">
-              {category.name} & description: {category.description}
+              {category.name}: {category.description}
             </h2>
             <Sort />
           </div>

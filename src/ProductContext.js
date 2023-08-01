@@ -18,6 +18,9 @@ export function ProductProvider({ children }) {
     description: "Watches & Accessories",
   });
 
+  // product count
+  const [productsCountInCart, setProductsCountInCart] = useState(0);
+
   const handleCategoryChange = (selectedCategory) => {
     if (selectedCategory === "Bags") {
       setProducts(bag_data);
@@ -48,6 +51,8 @@ export function ProductProvider({ children }) {
         category,
         setCategory,
         handleCategoryChange,
+        productsCountInCart,
+        setProductsCountInCart,
       }}
     >
       {children}

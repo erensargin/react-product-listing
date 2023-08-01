@@ -1,9 +1,14 @@
 import React from "react";
 import "./product.css";
+import ProductContext from "../../ProductContext";
+import { useContext } from "react";
 
 export default function Product({ product }) {
+  const { productsCountInCart, setProductsCountInCart } =
+    useContext(ProductContext);
+
   const handleAddToCart = () => {
-    alert("Product added to cart");
+    setProductsCountInCart(productsCountInCart + 1);
   };
 
   return (
