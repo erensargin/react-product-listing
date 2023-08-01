@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
-import watch_data from "./data/data";
+import watch_data from "./data/watch_data";
+import bag_data from "./data/bag_data";
 
 const ProductContext = createContext();
 
@@ -13,9 +14,27 @@ export function ProductProvider({ children }) {
 
   // category
   const [category, setCategory] = useState({
-    name: "Bags",
-    description: "Bags & Accessories",
+    name: "Watches",
+    description: "Watches & Accessories",
   });
+
+  const handleCategoryChange = (selectedCategory) => {
+    if (selectedCategory === "Bags") {
+      setProducts(bag_data);
+      setCategory({
+        name: "Bags",
+        description: "Bags & Accessories",
+      });
+      return;
+    } else if (selectedCategory === "Watches") {
+      setProducts(watch_data);
+      setCategory({
+        name: "Watches",
+        description: "Watches & Accessories",
+      });
+      return;
+    }
+  };
 
   return (
     <ProductContext.Provider
@@ -28,6 +47,7 @@ export function ProductProvider({ children }) {
         setSortOption,
         category,
         setCategory,
+        handleCategoryChange,
       }}
     >
       {children}
