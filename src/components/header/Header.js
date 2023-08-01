@@ -5,6 +5,7 @@ import { useContext } from "react";
 import Button from "@mui/material/Button";
 import mainLogo from "../../images/e-commerce-logo.png";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Badge from "@mui/material/Badge";
 
 export default function Header() {
   const { handleCategoryChange, productsCountInCart } =
@@ -31,8 +32,9 @@ export default function Header() {
           </Button>
         </div>
         <div className="cart">
-          <ShoppingCartIcon />
-          <h6>{productsCountInCart}</h6>
+          <Badge badgeContent={productsCountInCart} color="primary">
+            <ShoppingCartIcon />
+          </Badge>
         </div>
       </div>
     </>
