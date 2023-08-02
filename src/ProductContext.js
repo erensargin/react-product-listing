@@ -22,7 +22,7 @@ export function ProductProvider({ children }) {
   const [productsCountInCart, setProductsCountInCart] = useState(0);
 
   // price range
-  const [priceRange, setPriceRange] = useState([0, 3000]);
+  const [priceRange, setPriceRange] = useState([0, 400]);
 
   const handleCategoryChange = (selectedCategory) => {
     if (selectedCategory === "Bags") {

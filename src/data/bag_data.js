@@ -8,6 +8,8 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "red",
+    discountedPrice: 79,
+    stars: 4,
   },
   {
     id: 2,
@@ -18,6 +20,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "blue",
+    stars: 5,
   },
   {
     id: 3,
@@ -28,6 +31,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "green",
+    stars: 4,
   },
   {
     id: 4,
@@ -38,6 +42,8 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    discountedPrice: 129,
+    stars: 5,
   },
   {
     id: 5,
@@ -48,6 +54,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    stars: 3,
   },
   {
     id: 6,
@@ -58,6 +65,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    stars: 4,
   },
   {
     id: 7,
@@ -68,16 +76,19 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    stars: 5,
   },
   {
     id: 8,
     name: "Shopper bag with detail",
-    price: 400,
+    price: 399,
     image:
       "https://static.pullandbear.net/2/photos//2023/V/1/1/p/4038/140/009/4038140009_2_1_8.jpg?t=1677689930867&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    discountedPrice: 299,
+    stars: 4,
   },
   {
     id: 9,
@@ -88,6 +99,8 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    discountedPrice: 229,
+    stars: 5,
   },
   {
     id: 10,
@@ -98,6 +111,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    stars: 4,
   },
   {
     id: 11,
@@ -108,6 +122,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "red",
+    stars: 3,
   },
   {
     id: 12,
@@ -118,6 +133,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "blue",
+    stars: 4,
   },
   {
     id: 13,
@@ -128,6 +144,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "green",
+    stars: 5,
   },
   {
     id: 14,
@@ -138,6 +155,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    stars: 3,
   },
   {
     id: 15,
@@ -148,6 +166,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    stars: 4,
   },
   {
     id: 16,
@@ -158,6 +177,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    stars: 5,
   },
   {
     id: 17,
@@ -168,16 +188,19 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    stars: 4,
   },
   {
     id: 18,
     name: "Shopper bag with detail",
-    price: 400,
+    price: 399,
     image:
       "https://static.pullandbear.net/2/photos//2023/V/1/1/p/4038/140/009/4038140009_2_1_8.jpg?t=1677689930867&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    discountedPrice: 349,
+    stars: 5,
   },
   {
     id: 19,
@@ -188,6 +211,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    stars: 3,
   },
   {
     id: 20,
@@ -198,6 +222,7 @@ const bag_data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
+    stars: 2,
   },
 ];
 

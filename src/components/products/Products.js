@@ -33,7 +33,7 @@ export default function Products() {
   }, [filteredProducts, sortOption]);
 
   useEffect(() => {
-    const productsPerPage = 4;
+    const productsPerPage = 9;
     const endIndex = currentPage * productsPerPage;
     setVisibleProducts(sortedProducts.slice(0, endIndex));
   }, [currentPage, sortedProducts]);

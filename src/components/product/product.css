@@ -44,3 +44,22 @@
   .product-tile button:hover {
     background-color: #0056b3;
   }
+  .price_and_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .price_and_button h4{
+    margin: 7px 0px;
+    padding: 7px 4px;
+  }
+.original_price{
+  text-decoration: line-through;
+  color: #999;
+}
+.discounted_price{
+padding-right: 5px;
+
+}

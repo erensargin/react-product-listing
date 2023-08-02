@@ -5,6 +5,7 @@ import { useContext, useState, Fragment } from "react";
 import Snackbar from "@mui/material/Snackbar";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
+import Rating from "@mui/material/Rating";
 
 export default function Product({ product }) {
   const { productsCountInCart, setProductsCountInCart } =
@@ -42,9 +43,18 @@ export default function Product({ product }) {
       <img src={product.image} alt={product.name} />
       <h3>{product.name}</h3>
       <p>{product.description}</p>
-      <p>Price: {product.discountedPrice || product.price}</p>
-      <p>Ratings: {product.ratings} stars</p>
-      <button onClick={handleAddToCart}>Add to Cart</button>
+      <Rating name="read-only" value={product.stars} readOnly />
+      <div className="price_and_button">
+        {product.discountedPrice ? (
+          <h4>
+            <span className="discounted_price">{product.discountedPrice}$</span>
+            <span className="original_price">{product.price}$</span>
+          </h4>
+        ) : (
+          <h4>{product.price}$</h4>
+        )}
+        <button onClick={handleAddToCart}>Add to Cart</button>
+      </div>
 
       <Snackbar
         open={open}
@@ -56,3 +66,5 @@ export default function Product({ product }) {
     </div>
   );
 }
+
+// <h4>{product.discountedPrice || product.price}$</h4>

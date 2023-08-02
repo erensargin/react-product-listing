@@ -30,8 +30,10 @@ export default function Filter() {
     const filteredProducts = products.filter((product) => {
       const colorFilter =
         selectedColors.length === 0 || selectedColors.includes(product.color);
-      const priceFilter =
-        product.price >= priceRange[0] && product.price <= priceRange[1];
+      const priceFilter = product.discountedPrice
+        ? product.discountedPrice >= priceRange[0] &&
+          product.discountedPrice <= priceRange[1]
+        : product.price >= priceRange[0] && product.price <= priceRange[1];
       return colorFilter && priceFilter;
     });
 
@@ -66,7 +68,7 @@ export default function Filter() {
           value={priceRange}
           onChange={handlePriceChange}
           valueLabelDisplay="off"
-          max={3000}
+          max={400}
           min={0}
         />
       </div>
