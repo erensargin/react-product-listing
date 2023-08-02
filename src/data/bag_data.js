@@ -41,7 +41,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/I/1/1/p/4118/240/040/4118240040_2_1_8.jpg?t=1690284905189&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     discountedPrice: 129,
     stars: 5,
   },
@@ -53,7 +53,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/I/1/1/p/4077/240/040/4077240040_2_1_8.jpg?t=1686579487215&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 3,
   },
   {
@@ -64,7 +64,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/V/1/1/p/4055/140/002/4055140002_2_1_8.jpg?t=1674118289522&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -75,7 +75,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/V/1/1/p/4104/140/004/4104140004_2_1_8.jpg?t=1682420717696&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 5,
   },
   {
@@ -86,7 +86,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/V/1/1/p/4038/140/009/4038140009_2_1_8.jpg?t=1677689930867&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     discountedPrice: 299,
     stars: 4,
   },
@@ -98,7 +98,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/I/1/1/p/4126/240/009/4126240009_2_1_8.jpg?t=1686580458662&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     discountedPrice: 229,
     stars: 5,
   },
@@ -110,7 +110,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/V/1/1/p/4057/140/197/4057140197_2_1_8.jpg?t=1671536853833&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -154,7 +154,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/I/1/1/p/4118/240/040/4118240040_2_1_8.jpg?t=1690284905189&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 3,
   },
   {
@@ -165,7 +165,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/I/1/1/p/4077/240/040/4077240040_2_1_8.jpg?t=1686579487215&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -176,7 +176,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/V/1/1/p/4055/140/002/4055140002_2_1_8.jpg?t=1674118289522&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 5,
   },
   {
@@ -187,7 +187,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/V/1/1/p/4104/140/004/4104140004_2_1_8.jpg?t=1682420717696&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -198,7 +198,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/V/1/1/p/4038/140/009/4038140009_2_1_8.jpg?t=1677689930867&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     discountedPrice: 349,
     stars: 5,
   },
@@ -210,7 +210,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/I/1/1/p/4126/240/009/4126240009_2_1_8.jpg?t=1686580458662&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 3,
   },
   {
@@ -221,7 +221,7 @@ const bag_data = [
       "https://static.pullandbear.net/2/photos//2023/V/1/1/p/4057/140/197/4057140197_2_1_8.jpg?t=1671536853833&imwidth=1125",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 2,
   },
 ];

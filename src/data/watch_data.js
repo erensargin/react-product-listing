@@ -42,7 +42,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/x-fit-plus/x-fit-plus-gallery-02-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -53,7 +53,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/x-fit-watch-2/x-fit-watch-2-gallery-01-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 5,
   },
   {
@@ -64,7 +64,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/watch-lite-3/watch-3-lite-gallery-01.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -75,7 +75,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/watch-kids-blue/watch-kids-blue-gallery-02-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 5,
   },
   {
@@ -86,7 +86,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/watch-kids-pink/watch-kids-pink-gallery-02-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -97,7 +97,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/x-fit-watch-pixel/x-fit-watch-pixel-gallery-01-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 3,
   },
   {
@@ -108,7 +108,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt//watch-3-silver/watch3-gallerie-01.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -153,7 +153,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/x-fit-plus/x-fit-plus-gallery-02-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -164,7 +164,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/x-fit-watch-2/x-fit-watch-2-gallery-01-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -175,7 +175,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/watch-lite-3/watch-3-lite-gallery-01.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     discountedPrice: 149,
     stars: 4,
   },
@@ -187,7 +187,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/watch-kids-blue/watch-kids-blue-gallery-02-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 4,
   },
   {
@@ -198,7 +198,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/watch-kids-pink/watch-kids-pink-gallery-02-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 2,
   },
   {
@@ -209,7 +209,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt/x-fit-watch-pixel/x-fit-watch-pixel-gallery-01-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     discountedPrice: 159,
     stars: 3,
   },
@@ -221,7 +221,7 @@ const watch_data = [
       "https://niceboy.eu/files/produkt//watch-3-silver/watch3-gallerie-01.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    color: "yellow",
+    color: "brown",
     stars: 5,
   },
 ];

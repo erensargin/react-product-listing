@@ -47,15 +47,15 @@ export default function Filter() {
       <div className="color-filter">
         <h3>Color</h3>
         {availableColors.map((color) => (
-          <label key={color}>
+          <div className="color-filter-checkbox" key={color}>
             <input
               type="checkbox"
               value={color}
               checked={selectedColors.includes(color)}
               onChange={handleColorChange}
             />
-            {color}
-          </label>
+            <p style={{ color: color }}>{color}</p>
+          </div>
         ))}
       </div>
       <div className="price-filter">

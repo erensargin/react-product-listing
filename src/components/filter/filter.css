@@ -6,6 +6,17 @@
   .color-filter {
     margin-bottom: 20px;
   }
+
+  .color-filter p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .color-filter-checkbox{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+  }
   
   .color-filter h3 {
     margin-bottom: 10px;
