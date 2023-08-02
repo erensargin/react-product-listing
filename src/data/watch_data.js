@@ -1,82 +1,204 @@
 const watch_data = [
   {
     id: 1,
-    name: "Product 1",
-    price: 1000,
-    image: "https://picsum.photos/200/300",
+    name: "WATCH GTR",
+    price: 200,
+    image:
+      "https://niceboy.eu/files/produkt//watch-gtr-black/watch-gtr-galerie-02.jpg?v=1",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    category: "category 1",
     color: "red",
+    discountedPrice: 180,
   },
   {
     id: 2,
-    name: "Product 2",
-    price: 2002,
-    image: "https://picsum.photos/200/300",
+    name: "X-fit Plus",
+    price: 250,
+    image:
+      "https://niceboy.eu/files/produkt//watch-gtr-black/watch-gtr-galerie-01.jpg?v=1",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    category: "category 2",
     color: "blue",
   },
   {
     id: 3,
-    name: "Product 3",
-    price: 3003,
-    image: "https://picsum.photos/200/300",
+    name: "X-fit Watch 2",
+    price: 300,
+    image:
+      "https://niceboy.eu/files/produkt//watch-gtr-silver/watch-gtr-galerie-02.jpg?v=1",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    category: "category 3",
     color: "green",
   },
   {
     id: 4,
-    name: "Product 4",
-    price: 4004,
-    image: "https://picsum.photos/200/300",
+    name: "WATCH Lite 3",
+    price: 260,
+    image:
+      "https://niceboy.eu/files/produkt/x-fit-plus/x-fit-plus-gallery-02-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    category: "category 4",
     color: "yellow",
   },
   {
     id: 5,
-    name: "Product 5",
-    price: 4005,
-    image: "https://picsum.photos/200/300",
+    name: "Watch KIDS",
+    price: 405,
+    image:
+      "https://niceboy.eu/files/produkt/x-fit-watch-2/x-fit-watch-2-gallery-01-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    category: "category 5",
     color: "yellow",
   },
   {
     id: 6,
-    name: "Product 6",
-    price: 400,
-    image: "https://picsum.photos/200/300",
+    name: "Watch KIDS",
+    price: 159,
+    image:
+      "https://niceboy.eu/files/produkt/watch-lite-3/watch-3-lite-gallery-01.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    category: "category 6",
     color: "yellow",
   },
   {
     id: 7,
-    name: "Product 7",
-    price: 400,
-    image: "https://picsum.photos/200/300",
+    name: "X-fit Watch Pixel",
+    price: 99,
+    image:
+      "https://niceboy.eu/files/produkt/watch-kids-blue/watch-kids-blue-gallery-02-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    category: "category 4",
     color: "yellow",
   },
   {
     id: 8,
-    name: "Product 8",
-    price: 4006,
-    image: "https://picsum.photos/200/300",
+    name: "WATCH 3",
+    price: 59,
+    image:
+      "https://niceboy.eu/files/produkt/watch-kids-pink/watch-kids-pink-gallery-02-800x800.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    category: "category 4",
+    color: "yellow",
+  },
+  {
+    id: 9,
+    name: "WATCH 3",
+    price: 199,
+    image:
+      "https://niceboy.eu/files/produkt/x-fit-watch-pixel/x-fit-watch-pixel-gallery-01-800x800.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "yellow",
+  },
+  {
+    id: 10,
+    name: "WATCH 3",
+    price: 139,
+    image:
+      "https://niceboy.eu/files/produkt//watch-3-silver/watch3-gallerie-01.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "yellow",
+  },
+  {
+    id: 11,
+    name: "WATCH GTR",
+    price: 200,
+    image:
+      "https://niceboy.eu/files/produkt//watch-gtr-black/watch-gtr-galerie-02.jpg?v=1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "red",
+    discountedPrice: 180,
+  },
+  {
+    id: 12,
+    name: "X-fit Plus",
+    price: 250,
+    image:
+      "https://niceboy.eu/files/produkt//watch-gtr-black/watch-gtr-galerie-01.jpg?v=1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "blue",
+  },
+  {
+    id: 13,
+    name: "X-fit Watch 2",
+    price: 300,
+    image:
+      "https://niceboy.eu/files/produkt//watch-gtr-silver/watch-gtr-galerie-02.jpg?v=1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "green",
+  },
+  {
+    id: 14,
+    name: "WATCH Lite 3",
+    price: 260,
+    image:
+      "https://niceboy.eu/files/produkt/x-fit-plus/x-fit-plus-gallery-02-800x800.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "yellow",
+  },
+  {
+    id: 15,
+    name: "Watch KIDS",
+    price: 405,
+    image:
+      "https://niceboy.eu/files/produkt/x-fit-watch-2/x-fit-watch-2-gallery-01-800x800.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "yellow",
+  },
+  {
+    id: 16,
+    name: "Watch KIDS",
+    price: 159,
+    image:
+      "https://niceboy.eu/files/produkt/watch-lite-3/watch-3-lite-gallery-01.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "yellow",
+  },
+  {
+    id: 17,
+    name: "X-fit Watch Pixel",
+    price: 99,
+    image:
+      "https://niceboy.eu/files/produkt/watch-kids-blue/watch-kids-blue-gallery-02-800x800.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "yellow",
+  },
+  {
+    id: 18,
+    name: "WATCH 3",
+    price: 59,
+    image:
+      "https://niceboy.eu/files/produkt/watch-kids-pink/watch-kids-pink-gallery-02-800x800.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "yellow",
+  },
+  {
+    id: 19,
+    name: "WATCH 3",
+    price: 199,
+    image:
+      "https://niceboy.eu/files/produkt/x-fit-watch-pixel/x-fit-watch-pixel-gallery-01-800x800.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    color: "yellow",
+  },
+  {
+    id: 20,
+    name: "WATCH 3",
+    price: 139,
+    image:
+      "https://niceboy.eu/files/produkt//watch-3-silver/watch3-gallerie-01.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     color: "yellow",
   },
 ];

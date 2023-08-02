@@ -39,7 +39,7 @@ export default function Product({ product }) {
 
   return (
     <div className="product-tile">
-      <img src={product.imageUrl} alt={product.name} />
+      <img src={product.image} alt={product.name} />
       <h3>{product.name}</h3>
       <p>{product.description}</p>
       <p>Price: {product.discountedPrice || product.price}</p>
