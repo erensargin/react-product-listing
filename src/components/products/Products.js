@@ -19,8 +19,26 @@ export default function Products() {
           case "alpha-desc":
             return b.name.localeCompare(a.name);
           case "price-asc":
+            // check discounted price first
+            if (a.discountedPrice && b.discountedPrice) {
+              return a.discountedPrice - b.discountedPrice;
+            } else if (a.discountedPrice) {
+              return a.discountedPrice - b.price;
+            } else if (b.discountedPrice) {
+              return a.price - b.discountedPrice;
+            }
+            // if no discounted price, compare regular price
             return a.price - b.price;
           case "price-desc":
+            // check discounted price first
+            if (a.discountedPrice && b.discountedPrice) {
+              return b.discountedPrice - a.discountedPrice;
+            } else if (a.discountedPrice) {
+              return b.price - a.discountedPrice;
+            } else if (b.discountedPrice) {
+              return b.discountedPrice - a.price;
+            }
+            // if no discounted price, compare regular price
             return b.price - a.price;
           default:
             return 0;
